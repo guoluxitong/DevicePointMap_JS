@@ -77,4 +77,10 @@ export default class sdcSoftDevice {
     validateByteLength(byteArrayLength){
         return this.byteArrayLength>byteArrayLength
     }
+    getUiItem(map,key){
+        if(map[key]){
+            return map[key]
+        }
+        return null
+    }
 }

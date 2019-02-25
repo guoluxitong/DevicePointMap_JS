@@ -24,6 +24,9 @@ export default class byteField extends parentByteField {
                 }else if(typeof arguments[6] =='string'){
                     arguments[0].unit=arguments[6]
                     arguments[0].baseNumber=arguments[5]
+                }else if(typeof arguments[6] == 'number'){
+                    arguments[0].unit=arguments[5]
+                    arguments[0].baseNumber=arguments[6]
                 }
                 break;
         }
