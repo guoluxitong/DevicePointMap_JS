@@ -1,0 +1,28 @@
+{
+  "name": "DevicePointMap_JS",
+  "version": "1.0.0",
+  "description": "JavaScript版本设备点位表",
+  "main": "./min/devicePointMap.min.js",
+  "dependencies": {
+    "webpack": "^4.29.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -p --mode development --config build/webpack.config.js --progress --colors"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guoluxitong/DevicePointMap_JS.git"
+  },
+  "keywords": [
+    "util",
+    "tool"
+  ],
+  "author": "ShiEr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guoluxitong/DevicePointMap_JS/issues"
+  },
+  "homepage": "https://github.com/guoluxitong/DevicePointMap_JS#readme"
+}
