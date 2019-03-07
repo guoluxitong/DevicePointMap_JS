@@ -1,6 +1,6 @@
 function loadDevicePointMap(type) {
   return new Promise((resolve, reject) => {
-    import('@/dataparse/map/devicePointMap_'+type).then(data=>{
+    import('../map/devicePointMap_'+type).then(data=>{
       resolve(new data.default())
     }).catch(function(r){
         console.log(r);
@@ -9,13 +9,13 @@ function loadDevicePointMap(type) {
 }
 function loadDeviceModel(type) {
   return new Promise((resolve, reject) => {
-    import('@/dataparse/model/device_'+type).then(data=>{
+    import('../model/device_'+type).then(data=>{
       resolve(new data.default())
     }).catch(function(r){
     })
   })
 }
-export function getDeviceByByteDataAndType(byteData=[],type='') {
+function getDeviceByByteDataAndType(byteData=[],type='') {
     return new Promise((resolve, reject) => {
       Promise.all([loadDevicePointMap(type),loadDeviceModel(type)]).then((data)=>{
         let devicePointMap=data[0]
@@ -37,3 +37,4 @@ export function getDeviceByByteDataAndType(byteData=[],type='') {
         console.log(r);
     })
 }
+module.exports = getDeviceByByteDataAndType

@@ -1,6 +1,5 @@
 import parentMockField from '../mockField'
-import {getInt16Number,getFloat32Number} from '../../../../utils/dataparse'
-import {getUnit32Number} from "../../../../utils/dataparse";
+import {getInt16Number} from '../../../../dataparse'
 export default class mockField extends parentMockField {
     haveValue(...bytes) {
         let i = getInt16Number(bytes)
