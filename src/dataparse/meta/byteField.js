@@ -13,9 +13,6 @@ export default class byteField{
         this.baseNumber=0
         this.isShow=true
     }
-    getBaseNumber(){
-        return this.baseNumber
-    }
     getValueString(){
         if(this.unit!=""){
             return this.value+this.unit
