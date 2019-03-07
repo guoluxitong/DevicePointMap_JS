@@ -65,7 +65,6 @@ export default class byteField{
                     arguments[0].unit=arguments[5]
                     arguments[0].baseNumber=arguments[6]
                 }else if(typeof arguments[6] == 'object'){
-                    arguments[0].bit = arguments[5]
                     arguments[0].valueMap = arguments[6]
                 }
               break;

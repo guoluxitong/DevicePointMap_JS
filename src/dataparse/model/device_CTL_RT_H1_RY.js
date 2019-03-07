@@ -26,7 +26,7 @@ export default class device_CTL_RT_H1_RY extends device_CTL{
     }
     getPowerInfo(){
         if(this.getDeviceInfoFields()[key_point_ran_shao_qi_kongzhi].value>0){
-            return this.getOpenCloseFields()["oc_ranshaoqifuhediaojie/zengdadiaojie"].value>0?1:0
+            return this.getOpenCloseFields()["oc_ranshaoqibilijianda"].value>0?1:0
         }
         return 0
     }

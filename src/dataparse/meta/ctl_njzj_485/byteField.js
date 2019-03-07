@@ -30,11 +30,10 @@ export default class byteField extends parentByteField {
                 }
                 break;
             case 9:
-                arguments[0].unit=arguments[5]
-                arguments[0].cmdGorupKey = arguments[6]
-                arguments[0].address = arguments[7]
-                arguments[0].minValue = arguments[8]
-                arguments[0].maxValue = arguments[9]
+                arguments[0].valueMap = arguments[5]
+                arguments[0].address = arguments[6]
+                arguments[0].minValue = arguments[7]
+                arguments[0].maxValue = arguments[8]
                 break;
             case 10:
                 arguments[0].unit=arguments[5]
