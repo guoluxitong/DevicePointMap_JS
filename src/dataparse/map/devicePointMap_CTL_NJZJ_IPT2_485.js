@@ -7,7 +7,7 @@ import {
     ctl_njzj_common_valueMap
 } from './commonValueMap'
 import { deviceModel } from '../model/sdcSoftDevice'
-import byteField from '../meta/byteField'
+import byteField from '../meta/ctl_njzj_485/byteField'
 import baseInfoField from "../meta/ctl_njzj_485/baseInfoField"
 import deviceField from "../meta/ctl_njzj_485/deviceField"
 import exceptionField from "../meta/ctl_njzj_485/exceptionField"
@@ -21,10 +21,10 @@ import startStopField from "../meta/ctl_njzj_485/startStopField"
 export default class devicePointMap_CTL_NJZJ_IPT2_485 extends map {
     constructor() {
         super();
-        // const Commands_Key_Parameters_Setting = "设置参数";
-        // const Commands_Key_System_Ctl = "系统控制";
-        // this.commandsMap[Commands_Key_Parameters_Setting]=null;
-        // this.commandsMap[Commands_Key_System_Ctl]=null;
+        //const Commands_Key_Parameters_Setting = "设置参数";
+        //const Commands_Key_System_Ctl = "系统控制";
+        //this.commandsMap[Commands_Key_Parameters_Setting]=null;
+        //this.commandsMap[Commands_Key_System_Ctl]=null;
         const byteFieldObj = new byteField();
         this.getPointMap[deviceModel.key_point_system_status] = byteFieldObj.init(new baseInfoField(), deviceModel.key_point_system_status, 7, 2, "系统状态", ctl_njzj_common_valueMap.coms_status)
         this.getPointMap[deviceModel.key_point_run_days] = byteFieldObj.init(new runDayField(), deviceModel.key_point_run_days, 0, 0, "运行天数", "天")
